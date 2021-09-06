@@ -25,6 +25,31 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+    <script>
+      (function (w, d, s, u, o, e, p) {
+        (w[o] =
+          w[o] ||
+          function () {
+            (w[o].q = w[o].q || []).push(arguments);
+          }),
+          (e = d.createElement(s)),
+          (p = d.getElementsByTagName(s)[0]);
+        e.src = u;
+        e.async = 1;
+        p.parentNode.insertBefore(e, p);
+      })(
+        window,
+        document,
+        "script",
+        "https://cdn.ownid.com/js/firebase-sdk.es5.js",
+        "ownid"
+      );
+
+      ownid("init", {
+        serverUrl: "https://wel0h9cppxwp4t.server.ownid.com/ownid",
+      });
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
